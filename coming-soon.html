@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>Coming soon — BuyVerse</title>
+  </head>
+  <body>
+    <section id="header">
+      <div class="header-inner">
+        <div class="header-left">
+          <a href="index.html" class="nav-brand" aria-label="BuyVerse Home">
+            <span class="nav-bv" aria-hidden="true">BV</span>
+            <span class="nav-brand-text">
+              <span class="nav-brand-name">BuyVerse</span>
+              <span class="nav-brand-tag">theBV</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="header-nav-center" aria-label="Primary">
+          <ul id="navbar">
+            <li class="nav-item-close">
+              <a href="#" id="close" aria-label="Close menu"><i class="far fa-times"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-item-mobile-only"><a href="signup.html">Sign up · 10% off</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <a href="signup.html" class="header-signup-desktop">Sign up · 10% off</a>
+          <div id="lg-bag">
+            <a href="cart.html" aria-label="Shopping bag"><i class="far fa-shopping-bag"></i><span class="cart-count"></span></a>
+          </div>
+          <div id="mobile">
+            <a href="cart.html" aria-label="Cart"><i class="far fa-shopping-bag"></i><span class="cart-count"></span></a>
+            <i id="bar" class="fas fa-outdent" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-header">
+      <h2 id="coming-title">Coming Soon</h2>
+      <p id="coming-desc">Your event is getting ready. Check back soon.</p>
+    </section>
+
+    <section class="section-p1" style="padding-top: 32px;">
+      <div class="signup-card" style="max-width: 760px; margin: 0 auto;">
+        <div class="signup-badge"><span class="signup-bv">BV</span> BuyVerse</div>
+        <h3 style="margin-top: 18px;">Event coming soon</h3>
+        <p style="margin-top: 10px;" id="coming-body">We will announce the full details shortly.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px;">
+          <a href="shop.html" class="normal" style="text-decoration: none; display: inline-block;">Go to Shop</a>
+          <a href="signup.html" class="white" style="text-decoration: none; display: inline-block;">Sign up for alerts</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="footer-thanks">
+        <p><i class="fas fa-heart" aria-hidden="true"></i> Thank you for shopping with BuyVerse — we appreciate you.</p>
+      </div>
+      <div class="footer-brand-bar">
+        <div class="footer-brand-bar-inner">
+          <span class="footer-bv-mark" aria-hidden="true">BV</span>
+          <div class="footer-brand-text">
+            <strong class="footer-brand-title">BuyVerse</strong>
+            <span class="footer-brand-sub">theBV · Fashion in ₹</span>
+          </div>
+        </div>
+        <p class="footer-copy-line">© 2025 BuyVerse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const event = (params.get("event") || "event").toLowerCase();
+
+        const titleMap = {
+          buy2get1: "Buy 2 Get 1 Free",
+          newcollection: "New Collection",
+          "new-collection": "New Collection",
+        };
+
+        const title = titleMap[event] || "Coming Soon";
+        const desc =
+          event === "buy2get1"
+            ? "Buy 2 items, get 1 free — details coming soon."
+            : event === "newcollection"
+              ? "Fresh drops are on the way — new collection coming soon."
+              : "Your event is coming soon — stay tuned!";
+
+        document.getElementById("coming-title").textContent = title;
+        document.getElementById("coming-desc").textContent = desc;
+        document.getElementById("coming-body").textContent = desc;
+      })();
+    </script>
+
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
+

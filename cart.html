@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet"  href="style.css" >
+        <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <title>Cart — BuyVerse</title>
+    </head>
+
+    <body>
+        <section id="header">
+            <div class="header-inner">
+                <div class="header-left">
+                    <a href="index.html" class="nav-brand" aria-label="BuyVerse Home">
+                        <span class="nav-bv" aria-hidden="true">BV</span>
+                        <span class="nav-brand-text">
+                            <span class="nav-brand-name">BuyVerse</span>
+                            <span class="nav-brand-tag">theBV</span>
+                        </span>
+                    </a>
+                    <p class="nav-welcome" id="nav-welcome" hidden>
+                        <span class="nav-welcome-muted">Welcome back,</span>
+                        <strong class="nav-welcome-name" id="nav-welcome-name"></strong>
+                    </p>
+                </div>
+                <nav class="header-nav-center" aria-label="Primary">
+                    <ul id="navbar">
+                        <li class="nav-item-close"><a href="#" id="close" aria-label="Close menu"><i class="far fa-times"></i></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="nav-item-mobile-only"><a href="signup.html">Sign up · 10% off</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <a href="signup.html" class="header-signup-desktop">Sign up · 10% off</a>
+                    <div id="lg-bag"><a class="active" href="cart.html" aria-label="Shopping bag"><i class="far fa-shopping-bag"></i><span class="cart-count"></span></a></div>
+                    <div id="mobile">
+                        <a class="active" href="cart.html" aria-label="Cart"><i class="far fa-shopping-bag"></i><span class="cart-count"></span></a>
+                        <i id="bar" class="fas fa-outdent" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-header" class="cart-header">
+            <h2>#YourCart</h2>
+            <p>Review items, then checkout — secure payment gateways below.</p>
+        </section>
+
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product Name</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>₹0</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>₹0</strong></td>
+                    </tr>
+                </table>
+                <button type="button" class="normal" id="btn-checkout">Proceed to checkout</button>
+            </div>
+        </section>
+
+        <section id="checkout-payment" class="checkout-payment section-p1" hidden>
+            <div class="checkout-payment-inner">
+                <h3>Checkout &amp; payment</h3>
+                <p class="checkout-lead">Select how you would like to pay. This is a demo flow — no real charge is made.</p>
+
+                <div class="checkout-shipping">
+                    <h4>Delivery details</h4>
+                    <div class="checkout-grid">
+                        <input type="text" placeholder="Full name" aria-label="Full name">
+                        <input type="tel" placeholder="Phone" aria-label="Phone">
+                        <input type="text" class="checkout-full" placeholder="Street address" aria-label="Address">
+                        <input type="text" placeholder="City" aria-label="City">
+                        <input type="text" placeholder="PIN code" aria-label="PIN code">
+                    </div>
+                </div>
+
+                <div class="checkout-methods">
+                    <h4>Payment method</h4>
+                    <label class="pay-option"><input type="radio" name="pay-method" value="upi" checked> UPI / QR</label>
+                    <label class="pay-option"><input type="radio" name="pay-method" value="card"> Credit / Debit card</label>
+                    <label class="pay-option"><input type="radio" name="pay-method" value="netbank"> Net banking</label>
+                    <label class="pay-option"><input type="radio" name="pay-method" value="cod"> Cash on delivery</label>
+                </div>
+
+                <p class="checkout-gateways-label">Secured payment partners</p>
+                <div class="checkout-gateways">
+                    <img src="pay/pay.png" alt="Visa, Mastercard, RuPay, PayPal and other payment methods">
+                </div>
+
+                <button type="button" class="normal" id="btn-complete-order">Complete order &amp; pay</button>
+            </div>
+        </section>
+
+        <section class="cart-thank-strip section-p1" aria-label="Thank you">
+            <p><i class="fas fa-heart" aria-hidden="true"></i> Thank you for shopping with BuyVerse — every item is packed with care.</p>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+               <img class="logo" src="logo.svg" alt="logo">
+               <h4>Contact</h4>
+              <p> <strong>Address:</strong> Chitkara University,Rajpura,Punjab(140401), India</p>
+               <p> <strong>Phone:</strong> +91 1762 507000 / +91 98765 43210</p>
+               <p> <strong>Hours:</strong> 9:00 AM to 6:00 PM, Mon - Sat</p>
+               <div class="follow">
+                <h4>Follow Us</h4>
+                 <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                 </div>
+               </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="signup.html">Sign up — 10% off</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">My wishlist</a>
+                <a href="#">Track My order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+               <h4>Install App</h4>
+               <p>From App Store Or Google Play</p>
+               <div class="row">
+                <img src="pay/app.jpg" alt="">
+                <img src="pay/play.jpg" alt="">
+               </div>
+               <p>Secured Payment Gateways</p>
+               <img src="pay/pay.png" alt="">
+            </div>
+
+            <div class="footer-thanks">
+                <p><i class="fas fa-shopping-bag" aria-hidden="true"></i> Thank you for choosing BuyVerse — theBV.</p>
+            </div>
+            <div class="footer-brand-bar">
+                <div class="footer-brand-bar-inner">
+                    <span class="footer-bv-mark" aria-hidden="true">BV</span>
+                    <div class="footer-brand-text">
+                        <strong class="footer-brand-title">BuyVerse</strong>
+                        <span class="footer-brand-sub">theBV · Fashion in ₹</span>
+                    </div>
+                </div>
+                <p class="footer-copy-line">© 2025 BuyVerse. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="index.js"></script>
+        <script src="cart.js"></script>
+    </body>
+</html>

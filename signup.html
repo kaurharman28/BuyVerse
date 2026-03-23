@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Sign up — 10% off | BuyVerse</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="index.html" class="nav-brand" aria-label="BuyVerse Home">
+                    <span class="nav-bv" aria-hidden="true">BV</span>
+                    <span class="nav-brand-text">
+                        <span class="nav-brand-name">BuyVerse</span>
+                        <span class="nav-brand-tag">theBV</span>
+                    </span>
+                </a>
+                <p class="nav-welcome" id="nav-welcome" hidden>
+                    <span class="nav-welcome-muted">Welcome back,</span>
+                    <strong class="nav-welcome-name" id="nav-welcome-name"></strong>
+                </p>
+            </div>
+            <nav class="header-nav-center" aria-label="Primary">
+                <ul id="navbar">
+                    <li class="nav-item-close"><a href="#" id="close" aria-label="Close menu"><i class="far fa-times"></i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-item-mobile-only"><a class="active" href="signup.html">Sign up · 10% off</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="signup.html" class="header-signup-desktop active">Sign up · 10% off</a>
+                <div id="lg-bag"><a href="cart.html" aria-label="Shopping bag"><i class="far fa-shopping-bag"></i><span class="cart-count"></span></a></div>
+                <div id="mobile">
+                    <a href="cart.html" aria-label="Cart"><i class="far fa-shopping-bag"></i><span class="cart-count"></span></a>
+                    <i id="bar" class="fas fa-outdent" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-header" class="signup-header">
+        <h2>#JoinBuyVerse</h2>
+        <p>Create your account and unlock <strong>10% off</strong> your first order.</p>
+    </section>
+
+    <section class="signup-section section-p1">
+        <div class="signup-card">
+            <div class="signup-badge"><span class="signup-bv">BV</span> BuyVerse</div>
+            <h3>Welcome offer</h3>
+            <p class="signup-promo-line">Use code <code class="signup-code" id="promo-code-display">WELCOME10</code> at checkout after you sign up.</p>
+
+            <form id="signup-form" class="signup-form" novalidate>
+                <label>Full name
+                    <input type="text" name="name" required placeholder="Your name" autocomplete="name">
+                </label>
+                <label>Email
+                    <input type="email" name="email" required placeholder="you@example.com" autocomplete="email">
+                </label>
+                <label>Password
+                    <input type="password" name="password" required minlength="6" placeholder="At least 6 characters" autocomplete="new-password">
+                </label>
+                <label class="signup-check">
+                    <input type="checkbox" name="news" checked>
+                    Email me style drops &amp; offers
+                </label>
+                <button type="submit" class="normal signup-submit">Create account &amp; claim 10% off</button>
+            </form>
+
+            <div id="signup-success" class="signup-success" hidden>
+                <p><i class="fas fa-check-circle"></i> You are in! Your welcome code is saved on this device.</p>
+                <p class="signup-next">Start shopping — <a href="shop.html">Go to shop</a> or <a href="cart.html">view cart</a>.</p>
+            </div>
+
+            <div class="signup-actions">
+                <button type="button" id="signup-logout" class="normal signup-logout">Logout</button>
+            </div>
+
+            <p class="signup-foot">Already shopping? <a href="index.html">Back to home</a></p>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="logo.svg" alt="logo">
+            <h4>Contact</h4>
+                <p> <strong>Address:</strong> Chitkara University,Rajpura,Punjab(140401), India</p>
+               <p> <strong>Phone:</strong> +91 1762 507000 / +91 98765 43210</p>
+               <p> <strong>Hours:</strong> 9:00 AM to 6:00 PM, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="signup.html">Sign up — 10% off</a>
+            <a href="cart.html">View Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track My order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="pay/app.jpg" alt="">
+                <img src="pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="pay/pay.png" alt="">
+        </div>
+        <div class="footer-thanks">
+            <p><i class="fas fa-heart" aria-hidden="true"></i> Thank you for shopping with BuyVerse — we appreciate every order.</p>
+        </div>
+        <div class="footer-brand-bar">
+            <div class="footer-brand-bar-inner">
+                <span class="footer-bv-mark" aria-hidden="true">BV</span>
+                <div class="footer-brand-text">
+                    <strong class="footer-brand-title">BuyVerse</strong>
+                    <span class="footer-brand-sub">theBV · Fashion in ₹</span>
+                </div>
+            </div>
+            <p class="footer-copy-line">© 2025 BuyVerse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="cart.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

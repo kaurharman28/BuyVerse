@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 44" role="img" aria-label="BuyVerse theBV">
+  <rect width="44" height="44" rx="8" fill="#800020"/>
+  <text x="22" y="30" fill="#fff" font-family="system-ui,Segoe UI,sans-serif" font-size="15" font-weight="800" text-anchor="middle">BV</text>
+  <text x="54" y="19" fill="#1a1a1a" font-family="system-ui,Segoe UI,sans-serif" font-size="9" font-weight="600" letter-spacing="0.12em">theBV</text>
+  <text x="54" y="36" fill="#1a1a1a" font-family="system-ui,Segoe UI,sans-serif" font-size="17" font-weight="800">BuyVerse</text>
+</svg>
